@@ -5,41 +5,53 @@
     --accent-color:red;
 }
 
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
 body {
     max-width: 980px;
-    margin: auto;
+    margin: 0 ;
 }
 header .entire-topbox {
     font-family: 'Raleway';
     font-size: 0.8rem;
-    height: 90px;
+    height: 92px;
     display:flex;
     justify-content: space-between;
     align-items:center;
     border: 1px solid transparent;
+    border-bottom-color:white;
+    display: inline-flex;
+    flex-direction: row;
 }
-header .menu-items {
+header nav{
+    border: 1px solid transparent;
+    border-bottom-color:white;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5px;
+    height: 90px;
     display: flex;
-    list-style-type: none;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+header .menu-items {
+    list-style-type: none;
     padding: 5px;
     width: 355px;
-    margin: 0 auto;
-    height: 90px;
-    border: 1px solid var(--header-color);
+    margin: 0;
 }
 
-header .menu-items a {
-    color: var(--header-color);
-    text-transform: capitalize;
-    text-decoration: none;
-}
+    header .menu-items a {
+        color: var(--header-color);
+        text-transform: capitalize;
+        text-decoration: none;
+    }
 
-header .menu-items a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
+    header .menu-items a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
 
 header .logotext p{
     font-family: Pacifico, cousive;
@@ -47,52 +59,73 @@ header .logotext p{
     color: var(--header-color);
     text-align: center;
     text-transform: capitalize;
-    padding: 5px;
-    border: 1px solid var(--header-color);
 }
 
 header .search {
-    height: 90px;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
     width: 225px;
-    margin: 0 auto;
-    padding: 5px;
-    border: 1px solid var(--header-color)
 }
 
-header .social-icons {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    color:var(--header-color);
-    margin: 0 auto;
-    padding: 5px;
+header .timestamp{
+    color: var(--header-color);
     width: 130px;
-    height: 90px;
-    border: 1px solid var(--header-color);
+    justify-content: center;
+}
+
+header .search-button{
+    align-items: baseline;
+}
+
+header .social-account-icons {
+    list-style-type: none;
+    color:var(--header-color);
+    width: 130px;
 }
 
 header .banner{
     display: grid;
-    justify-items: center;
-    aligh-itens: center;
+    flex-direction: column;
+    justify-items: center; 
+    align-items: flex-end; 
+    height: 150px;
 }
 
-header .banner h1{
-    justify-content: center;
+header .banner h1{    
     font-family: 'Raleway';
     font-size: 2rem;
     color: var(--header-color);
+    margin: 5px; 
 }
+
+header .shop-now{
+    border-radius: 50px;
+    width: 120px;
+}
+
 header {
     min-height: 420px;
     background-image: url(../img/header-coffee-cups.jpg);
     background-size: cover;
     background-position: center;
  }
+
+ main .container {
+     display: grid;
+     grid-template-columns: 1fr, 1fr,1fr;
+     box-sizing: border-box;
+     justify-content: center;
+     align-items: center;
+ }
+
+ main .shop-now{
+    border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
 
 
 
