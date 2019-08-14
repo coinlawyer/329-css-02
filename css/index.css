@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway&display=swap');
-
 :root {
-    --header-color:white;
-    --accent-color:red;
+    --header-color: white;
+    --accent-color: red;
 }
 
-*{padding: 0; margin: 0; box-sizing: border-box;}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     max-width: 980px;
-    margin: 0 ;
+    margin: 0 auto;
 }
+
 header .entire-topbox {
     font-family: 'Raleway';
     font-size: 0.8rem;
@@ -19,13 +23,19 @@ header .entire-topbox {
     justify-content: space-between;
     align-items: center;
     border: 1px solid transparent;
+<<<<<<< HEAD
     /* border-bottom-color: white; */
     /* display: inline-flex; */
+=======
+    border-bottom-color: white;
+    display: inline-flex;
+>>>>>>> 224645e6ee1c5922fb69f968331aa4fcc2852d2f
     flex-direction: row;
 }
-header nav{
+
+header nav {
     border: 1px solid transparent;
-    border-bottom-color:white;
+    border-bottom-color: white;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 5px;
@@ -35,6 +45,7 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
+
 header .menu-items {
     list-style-type: none;
     padding: 5px;
@@ -42,18 +53,18 @@ header .menu-items {
     margin: 0;
 }
 
-    header .menu-items a {
-        color: var(--header-color);
-        text-transform: capitalize;
-        text-decoration: none;
-    }
+header .menu-items a {
+    color: var(--header-color);
+    text-transform: capitalize;
+    text-decoration: none;
+}
 
-    header .menu-items a:hover {
-        color: var(--accent-color);
-        text-decoration: underline;
-    }
+header .menu-items a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
 
-header .logotext p{
+header .logotext p {
     font-family: Pacifico, cousive;
     font-size: 2em;
     color: var(--header-color);
@@ -65,38 +76,38 @@ header .search {
     width: 225px;
 }
 
-header .timestamp{
+header .timestamp {
     color: var(--header-color);
-    width: 130px;
+    width: auto;
     justify-content: center;
 }
 
-header .search-button{
+header .search-button {
     align-items: baseline;
 }
 
 header .social-account-icons {
     list-style-type: none;
-    color:var(--header-color);
+    color: var(--header-color);
     width: 130px;
 }
 
-header .banner{
+header .banner {
     display: grid;
     flex-direction: column;
-    justify-items: center; 
-    align-items: flex-end; 
+    justify-items: center;
+    align-items: flex-end;
     height: 150px;
 }
 
-header .banner h1{    
+header .banner h1 {
     font-family: 'Raleway';
     font-size: 2rem;
     color: var(--header-color);
-    margin: 5px; 
+    margin: 5px;
 }
 
-header .shop-now{
+header .shop-now {
     border-radius: 50px;
     width: 120px;
 }
@@ -106,26 +117,53 @@ header {
     background-image: url(../img/header-coffee-cups.jpg);
     background-size: cover;
     background-position: center;
- }
-
- main .container {
-     display: grid;
-     grid-template-columns: 1fr, 1fr,1fr;
-     box-sizing: border-box;
-     justify-content: center;
-     align-items: center;
- }
-
- main .shop-now{
-    border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
 }
 
+main .container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+main .shop-now {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+}
 
+footer {
+    display: flex;
+    width: 980px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: fixed;
+    color: white;
+    background-color: #323b40;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social-media-icons-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    width: 200px;
+}
+
+.team {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
