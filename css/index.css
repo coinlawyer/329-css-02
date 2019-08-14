@@ -15,12 +15,12 @@ header .entire-topbox {
     font-family: 'Raleway';
     font-size: 0.8rem;
     height: 92px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     border: 1px solid transparent;
-    border-bottom-color:white;
-    display: inline-flex;
+    /* border-bottom-color: white; */
+    /* display: inline-flex; */
     flex-direction: row;
 }
 header nav{
