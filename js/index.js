@@ -13,6 +13,39 @@ function getDataByFetch (){
         });
 }
 
+const sortToSmaller = document.querySelector('.price-to-small');
+const sortToLarger = document.querySelector('.price-to-large');
+const sortByName = document.querySelector('.by-name');
+
+sortToSmaller.addEventListener('change', sortProducts);
+sortToLarger.addEventListener('change', sortProducts);
+sortByName.addEventListener('change', sortProducts);
+
+function sortProducts (){
+   fetch('products.json')
+   .then(response => {
+      return response.json()
+      .then (data => {
+         for(i=0; i<sort.length; i++){
+            if (select.onchange.value === sortToSmaller) {
+               data.sort((a, b) => a.price - b.price)
+            }
+               else if (select.onchange.value === sortToLarger) {
+                  data.sort((a, b) => b.price - a.price)
+               }
+               else {
+                  data.name.sort();
+               } 
+         }
+      })
+   })  
+}
+/* or use this function
+function getSelectedItem (selectObject) {
+   const x = selectObject.value;
+   return document.getElementsByClassName(".sortoptions").innerHTML;*/
+
+
 function createNode(element) {
    return document.createElement(element);
 }
@@ -46,5 +79,9 @@ fetch(url)
 document.querySelector('.fetch-team').removeEventListener('click', fetchTeam);
 }
 
-
-
+const cart = new Cart($('#cartModal'));
+const productList = new ProductList(
+  'products.json',
+  $('.products-container'),
+  cart
+);

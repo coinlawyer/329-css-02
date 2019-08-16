@@ -9,96 +9,108 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon-coffeecup.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="container">
-        <div class="entire-topbox">
-            <nav class="top-menu">
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="our-coffee.html">Our Coffee</a></li>
-                    <li><a href="about-us.thml">About Us</a></li>
-                    <li><a href="coffee-guides.html">Coffee guides</a></li>
-                    <li><a href="contacts.html">Cotacts</a></li>
-                </ul>
-            </nav>
-            <nav class="logotext">
-                <p>Authentic Coffee</p>
-            </nav>
-            <nav class="search">
-                <form class="search-button">
-                    <input type="text" placeholder="Search">
-                </form>
-            </nav>
-            <nav>
-                <ul class="social-account-icons">
-                    <li><i class="fab fa-facebook-f"><a href="facebook.html"></a></i></li>
-                    <li><i class="fab fa-instagram"><a href="instagram.html"></a></i></li>
-                    <li><i class="fab fa-pinterest-p"><a href="pinterest.html"></a></i></li>
-                    <li><i class="fas fa-shopping-bag"><a href="index.html"></a></i></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="banner">
-            <h1 class="motto">It`s Always Coffee Time <br>
-                With Authentic Coffee</h1><br>
-            <button class="shop-now">Shop Now</button>
-            <div class="timestamp">Lviv Local Time<br></div>
+    <header>
+        <div class="container">
+            <div class="entire-topbox">
+                <nav class="top-menu-left">
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="coffee-guides.html">Coffee guides</a></li>
+                        <li><a href="contacts.html">Cotacts</a></li>
+                    </ul>
+                </nav>
+                <div class="logotext">
+                    <p>Authentic Coffee</p>
+                </div>
+                <div class="search-cart">
+                    <form action="">
+                            <input type="search" placeholder="Search...">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                    </form>
+                    <div class="cart">
+                        <ul class="cart">
+                            <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="motto"> 
+                    <h1 class="motto">It`s Always Coffee Time <br>
+                        With Authentic Coffee</h1><br>
+                </div>
+                <a href="cart.html"></a><button id="shop-button" class="animated">Shop Now</button></a>
+                <div class="timestamp">Lviv Local Time<br></div>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="text-over-items"><h2>Our products</h2> <br>
+        <div class="text-under-header">
+            <h2>Our products</h2> <br>
             <p>All sorts of our coffee could be packed in 250g, 500g or 1kg bags.<br>
-                For individual cases we have gift bags.</p></div> 
-            <div class="container">
-                <figure><a href="#"><img src="img/coffee-packet-brown.jpg" alt="coffee-packet-brown" width="310"></a>
+                For individual cases we offer gift bags.</p>
+        </div> 
+        <label class="sort-list">
+            Sort items by: <br>
+            <select class = "sort-options" name="sort-products-options">
+                <option class="price-to-small">by price from small to large</option>
+                <option class="price-to-large">by price from large to small</option>
+                <option class="by-name">by name</option>
+            </select>        
+        </label>
+        <div class="product-list">
+                <div class="product-container">
+                    <a href="#"><img src="img/coffee-packet-brown.jpg" alt="coffee-packet-brown"></a>
                     <figcaption>Uganda Arabica 250g, 7$</figcaption>
-                </figure>
-                <figure><a href="#"><img src="img/coffee-packet-red.jpg" alt="coffee-packet-red" width="310"></a>
+                </div>
+                <div class="product-container">
+                    <a href="#"><img src="img/coffee-packet-red.jpg" alt="coffee-packet-red"></a>
                     <figcaption>Kenia Arabica 250g, 9$</figcaption>
-                </figure>
-                <figure><atg33 href="#"><img src="img/coffee-packet-blue.jpg" alt="coffee-packet-blue" width="310"></a>
-                    <figcaption>Guatemala Arabica 250g, 8$</figcaption>
-                </figure>
-                <br><button type="button" class="shop-more">Shop more</button>
-            </div>
+                </div>
+                <div class="product-container">
+                    <a href="#"><img src="img/coffee-packet-blue.jpg" alt="coffee-packet-blue"></a>
+                        <figcaption>Guatemala Arabica 250g, 8$</figcaption>
+                </div>
+        </div>
         <aside>
-            <h2>Read Our Coffee Guides</h2>
-            <a href="guides-to-coffee.html"><img src="img/coffee-fields.jpg" alt="coffee-fields-index" width="980"></a>
+            <h2><a href="coffee-guides.html"></ahref>Read Our Coffee Guides</a> </h2>
         </aside>
         <section id="coffee-quotes">
-            <h2>Best quotes about coffee</h2>
+            <h2>What people told about coffee</h2>
 
             <p><q>Coffee is a language in itself.</q><br>
-                <cite>-Jackie Chan</cite></p>
-
-            <q>Life is what happens between coffee and wine.</q>
-            <cite>- Anonymous</cite>
-
-            <q>Coffee, the favorite drink of the civilized world.</q>
-            <cite>- Thomas Jefferson</cite>
-
+                <cite>-Jackie Chan</cite><br>
+            <q>Life is what happens between coffee and wine.</q><br>
+                <cite>- Anonymous</cite><br>
+            <q>Coffee, the favorite drink of the civilized world.</q><br>
+                <cite>- Thomas Jefferson</cite><br>
             <p><q>Behind every successful woman is a substantial amount of coffee.</q><br>
                 <cite>- Stephanie Piro</cite></p>
-        </section>
-        <section>
-            <h2>Get To Know Authentic Coffee Better</h2>
         </section>
     </main>
     <footer class="footer">
         <p class="copyright-text">© 2019 Authentic Coffee. All rights reserved.</p>
         <div class="social-media-footer">
-            <ul = class="social-media-icons-list">
-                <li><i class="fab fa-facebook-f"><a href="facebook.html"></a></i></li>
-                <li><i class="fab fa-instagram"><a href="instagram.html"></a></i></li>
-                <li><i class="fab fa-pinterest-p"><a href="pinterest.html"></a></i></li>
-                <li><i class="fal fa-home-alt"><a href="index.html"></a></i></li>
-            </ul>
+            <ul class="social-media-icons-list">
+                <li><a href="facebook.html"><i class="fab fa-facebook-f"></i></a></i></li>
+                <li><a href="instagram.html"><i class="fab fa-instagram"></i></a></i></li>
+                <li><a href="pinterest.html"><i class="fab fa-pinterest-p"></i></a></i></li>
+                <li><a href="index.html"><i class="fal fa-home-alt"></i></a></i></li>
+                </ul>
         </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,38 @@
+[ {
+    "id" : 100,
+    "name" : "Brasil Mogiana",
+    "price" : 6.3,
+    "flavour" : "Flavour: Toffee and fruity caramel",
+    "Process" : "Full natural and dried in the sun and mechanical driers"
+},
+{
+    "id" : 101,
+    "name" : "Burundi Mumirwa",
+    "price" : 8,
+    "flavour" : "Flavour: Toffee and fruity caramel",
+    "Process" : "Fully washed and sun dried"
+
+},
+{   
+    "id" : 102,
+    "name" : "Ethiopia Sidamo",
+    "price" : 5,
+    "flavour" : "Very distinct floral flavour",
+    "Process" : "Fully washed"
+},
+{   
+    "id" : 103,
+    "name" : "Kenya Kii",
+    "price" : 9,
+    "flavour" : "Complex fruit flavours",
+    "Process" : "Washed"
+}, 
+{
+    "id" : 104,
+    "name" : "Guatemala Huehuetenango",
+    "price" : 7,
+    "flavour" : "Distinct acidity and fruited flavors",
+    "Process" : "Wet"
+}
+]
+

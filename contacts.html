@@ -13,45 +13,46 @@
 </head>
 
 <body>
-    <header class="container">
-        <div class="entire-topbox">
-            <nav class="top-menu">
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="our-coffee.html">Our Coffee</a></li>
-                    <li><a href="about-us.thml">About Us</a></li>
-                    <li><a href="coffee-guides.html">Coffee guides</a></li>
-                    <li><a href="contacts.html">Cotacts</a></li>
-                </ul>
-            </nav>
-            <nav class="logotext">
-                <p>Authentic Coffee</p>
-            </nav>
-            <nav class="search">
-                <form class="search-button">
-                    <input type="text" placeholder="Search">
-                </form>
-            </nav>
-            <nav>
-                <ul class="social-account-icons">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-pinterest-p"></i></li>
-                    <li><i class="fas fa-shopping-bag"></i></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="banner">
-            <h1 class="motto">It`s Always Coffee Time <br>
-                With Authentic Coffee</h1><br>
-            <button class="shop-now">Shop Now</button>
-            <div class="timestamp">Lviv Local Time<br></div>
+    <header>
+        <div class="container">
+            <div class="entire-topbox">
+                <nav class="top-menu-left">
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="coffee-guides.html">Coffee guides</a></li>
+                        <li><a href="contacts.html">Cotacts</a></li>
+                    </ul>
+                </nav>
+                <div class="logotext">
+                    <p>Authentic Coffee</p>
+                </div>
+                <div class="search-cart">
+                    <form action="">
+                            <input type="search" placeholder="Search...">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                    </form>
+                    <div class="cart">
+                        <ul class="cart">
+                            <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="motto"> 
+                    <h1 class="motto">It`s Always Coffee Time <br>
+                        With Authentic Coffee</h1><br>
+                </div>
+                <a href="cart.html"></a><button class="shop-button">Shop Now</button></a>
+                <div class="timestamp">Lviv Local Time<br></div>
+            </div>
         </div>
     </header>
     <main>
         <h3 class="if-deliver-text">Wnat to check the amount of our coffe, you`ve bought this year.</h3>
         <div class="input-countainer">
-            <!-- <form method="POST" class="input-field">
+            <form method="POST" class="input-field">
                 <fieldset>
                     <label>Your login:
                         <input type="text" placeholder="input your login" name="client-login">
@@ -61,12 +62,12 @@
                     </label><br>
                     <label for="">
                         <b></b></label><br>
-                    <textarea name="coffee-sorts" class="coffee-sorts" cols="40" rows="10"></textarea> -->
+                    <textarea name="coffee-sorts" class="coffee-sorts" cols="40" rows="10"></textarea>
                     <button class="fetch-html">Click here</button>
                     <fieldset>
                             <h4>Wait a few seconds for the result:</h4>
                             <p>Dear: <b><span class="client-name"></span></b> </p>
-                            <p>In 2019 the amount of coffee you`ve bougnt equals: <b><span class="year-amount"></span></b></p>
+                            <p>In 2019 the amount of coffee you`ve bought equals: <b><span class="year-amount"></span></b></p>
                     </fieldset>
                     <br><button class="fetch-team">Click to view our team!</button>
                     <fieldset><ul class="team"></ul>

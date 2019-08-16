@@ -5,9 +5,39 @@
 }
 
 * {
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    color: var(--header-color);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+@media (min-width: 550px){
+    header .entire-topbox {
+        display: grid;  
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr;    
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }   
+}
+
+@media (min-width: 520px){
+    main .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 640px){
+    main .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 body {
@@ -18,46 +48,19 @@ body {
 header .entire-topbox {
     font-family: 'Raleway';
     font-size: 0.8rem;
-    height: 92px;
-    display: flex;
-    justify-content: space-between;
+    height: 92px;   
+    flex:1; 
     align-items: center;
-    border: 1px solid transparent;
-<<<<<<< HEAD
-    /* border-bottom-color: white; */
-    /* display: inline-flex; */
-=======
-    border-bottom-color: white;
-    display: inline-flex;
->>>>>>> 224645e6ee1c5922fb69f968331aa4fcc2852d2f
-    flex-direction: row;
-}
-
-header nav {
-    border: 1px solid transparent;
-    border-bottom-color: white;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 5px;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    }
 
 header .menu-items {
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;   
     padding: 5px;
-    width: 355px;
     margin: 0;
 }
 
-header .menu-items a {
-    color: var(--header-color);
-    text-transform: capitalize;
-    text-decoration: none;
-}
 
 header .menu-items a:hover {
     color: var(--accent-color);
@@ -69,47 +72,46 @@ header .logotext p {
     font-size: 2em;
     color: var(--header-color);
     text-align: center;
-    text-transform: capitalize;
+    margin: 5px;
 }
 
-header .search {
-    width: 225px;
+header .logotext {
+    justify-content: center; 
+    align-self: center;   
+}
+
+li {
+    list-style-type: none;
+    color: var(--header-color);
+    font-size: 1rem;
+} 
+
+header .search-cart {
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+    padding: 5px;
 }
 
 header .timestamp {
     color: var(--header-color);
-    width: auto;
-    justify-content: center;
-}
-
-header .search-button {
-    align-items: baseline;
-}
-
-header .social-account-icons {
-    list-style-type: none;
-    color: var(--header-color);
-    width: 130px;
+    justify-items: space-around;
 }
 
 header .banner {
     display: grid;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     justify-items: center;
-    align-items: flex-end;
+    align-items: end;
     height: 150px;
 }
 
 header .banner h1 {
     font-family: 'Raleway';
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--header-color);
-    margin: 5px;
-}
-
-header .shop-now {
-    border-radius: 50px;
-    width: 120px;
+    margin-top: 85px;
 }
 
 header {
@@ -120,34 +122,91 @@ header {
 }
 
 main .container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    box-sizing: border-box;
+    display: flex;
+    flex:1;
     justify-content: center;
     align-items: center;
     text-align: center;
+}   
+
+.text-under-header {
+    text-align: center;
 }
 
-main .shop-now {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    color: #333;
-    background: #fff;
-    margin-bottom: 50px;
-    box-shadow: 0 3px 20px 0 #0000003b;
+main .product-container img {
+    display: block;
+    width: 100%;
+}
+
+main aside { 
+        min-height: 280px;
+        background-image: url(../img/coffee-fields.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+main aside h2{
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    color: var(--header-color);
+    margin: 5px;
+    text-align: center;
+}
+
+main #coffee-quotes{
+    display: flex;
+    flex-direction: column; 
+    justify-items: center;
+    align-items: center;
+}
+
+#shop-button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.animated {
+  animation: pulse;  
+  animation-duration: 2s;
+  animation-delay: 2s;  
+  animation-iteration-count: infinite;
+}
+
+.shop-button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+    .shop-button{
+    display:block;
+    margin:0.4em auto
+    }
 }
 
 footer {
     display: flex;
-    width: 980px;
-    height: 40px;
+    flex:1;
+    height: auto;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    position: fixed;
     color: white;
     background-color: #323b40;
     align-items: center;
@@ -157,9 +216,14 @@ footer {
 footer .social-media-icons-list {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-content: stretch;
-    width: 200px;
+    justify-items: space-around;   
+    padding: 5px;
+    margin: 0;
+}
+
+footer a {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .team {
@@ -167,3 +231,6 @@ footer .social-media-icons-list {
     display: flex;
     justify-content: space-between;
 }
+
+
+
