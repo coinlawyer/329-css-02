@@ -1,0 +1,37 @@
+[ {
+    "id" : "1",
+    "title" : "Brasil Mogiana",
+    "image" : "coffee-packet-blue.jpg",
+    "price" : 6.3,
+    "description" : "Flavour: Toffee and fruity caramel"
+},
+{
+    "id" : "2",
+    "title" : "Burundi Mumirwa",
+    "image" : "coffee-packet-red.jpg",
+    "price" : 8,
+    "description" : "Flavour: Toffee and fruity caramel"
+},  
+{   
+    "id" : "3",
+    "title" : "Ethiopia Sidamo",
+    "image" : "coffee-packet-brown.jpg",
+    "price" : 5,
+    "description" : "Very distinct floral flavour"
+},
+{   
+    "id" : "4",
+    "title" : "Kenya Kii",
+    "image" : "coffee-packet-blue.jpg",
+    "price" : 9,
+    "description" : "Complex fruit flavours"
+}, 
+{
+    "id" : "5",
+    "title" : "Guatemala Huehuetenango",
+    "image" : "coffee-packet-brown.jpg",
+    "price" : 7,
+    "description" : "Distinct acidity and fruited flavors"
+}
+]
+

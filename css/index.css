@@ -97,6 +97,7 @@ header .search-cart {
 header .timestamp {
     color: var(--header-color);
     justify-items: space-around;
+    font-family: 'Raleway';
 }
 
 header .banner {
@@ -127,15 +128,22 @@ main .container {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }   
 
 .text-under-header {
     text-align: center;
 }
 
-main .product-container img {
+main aside img {
     display: block;
     width: 100%;
+}
+
+main h2{
+    display: flex;  
+    justify-content: center;    
 }
 
 main aside { 
@@ -188,7 +196,7 @@ main #coffee-quotes{
   animation-iteration-count: infinite;
 }
 
-.shop-button:hover{
+#shop-button:hover{
     color:#000000;
     background-color:#FFFFFF;
 }
@@ -232,5 +240,18 @@ footer a {
     justify-content: space-between;
 }
 
+.card {
+    height: 100%;
+}
 
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
 
+.btn {
+    padding: 0.75rem 0.7rem;
+}
